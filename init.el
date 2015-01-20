@@ -32,3 +32,24 @@
 (autoload 'mmix-mode "mmix-mode" "Major mode for editing MMIX files" t)
 (setq auto-mode-alist (cons '("\\.mms" . mmix-mode)
                                   auto-mode-alist)) 
+
+;; check OS type
+(cond
+ ((string-equal system-type "windows-nt") ; Microsoft Windows
+  (progn
+    (message "Microsoft Windows") )
+  (load-library "~/.emacs.d/init-win.el")
+  )
+ ((string-equal system-type "darwin")   ; Mac OS X
+  (progn
+    (message "Mac OS X")
+    )
+  )
+ ((string-equal system-type "gnu/linux") ; linux
+  (progn
+    (message "Linux") )
+  )
+ )
+
+(custom-set-variables '(tool-bar-mode nil))
+
