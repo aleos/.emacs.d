@@ -1,6 +1,4 @@
-(progn
-  (message "+ init-load-packages.el")
-  )
+(message "+ init-load-packages.el")
 
 (add-to-list 'load-path "~/.emacs.d/plugins")
 
