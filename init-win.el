@@ -1,6 +1,4 @@
-(progn
-  (message "+ init-win.el")
-  )
+(message "+ init-win.el")
 
 ;; Set good fonts for Windows
 (custom-set-faces

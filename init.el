@@ -5,7 +5,7 @@
 ;; Very good source of recipes about emacs configuring:
 ;; http://www.masteringemacs.org/article/beginners-guide-to-emacs
 
-(progn (message "+ init.el"))
+(message "+ init.el")
 
 ;; Enable IDO (“Interactively Do Things”) mode
 (ido-mode 1)
@@ -22,18 +22,12 @@
 ;; check OS type
 (cond
  ((string-equal system-type "windows-nt") ; Microsoft Windows
-  (progn
-    (message "Microsoft Windows") )
+  (message "Microsoft Windows") 
   (load "~/.emacs.d/init-win.el")
   )
  ((string-equal system-type "darwin")   ; Mac OS X
-  (progn
-    (message "Mac OS X")
-    )
+  (message "Mac OS X")
   )
  ((string-equal system-type "gnu/linux") ; linux
-  (progn
-    (message "Linux") )
-  )
+  (message "Linux") )
  )
-
