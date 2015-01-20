@@ -16,7 +16,7 @@
 ;; Don't show help screen at startup
 (setq inhibit-startup-screen t)
 ;; Don't show toolbar
-(setq tool-bar-mode nil)
+(tool-bar-mode -1)
 
 (load "~/.emacs.d/init-load-packages.el")
 ;; check OS type
@@ -36,6 +36,4 @@
     (message "Linux") )
   )
  )
-
-(custom-set-variables '(tool-bar-mode nil))
 
