@@ -17,6 +17,12 @@
 (setq tool-bar-mode nil)
 
 (add-to-list 'load-path "~/.emacs.d/plugins")
+
+;; GNU MIX Development Kit (MDK)
+;(setq load-path (cons "/opt/local/share/mdk" load-path))
+;(autoload 'mixvm "mixvm" "mixvm/gud interaction" t)
+
+
 ;;(require 'qt-pro)
 ;;(add-to-list 'auto-mode-alist '("\\pr[io]$" . qt-pro-mode))
 (require 'qmake-mode "qmake.el")
